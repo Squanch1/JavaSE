@@ -13,16 +13,20 @@ public class Test6 {
         int number = sc.nextInt();
         int digits = judgeDigits(number);
         int[] arr = new int[digits];
-        int index=arr.length-1;
+        int encryptedPassword = 0;
         for (int i = 0; i < arr.length; i++) {
-            arr[index] = number % 10;
-            number/=10;
-            index--;
+            arr[i] = number % 10;
+            number /= 10;
         }
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            arr[i] = (arr[i] + 5) % 10;
         }
+        for (int i = 0; i < arr.length; i++) {
+            encryptedPassword = encryptedPassword * 10 + arr[i];
+        }
+        System.out.println(encryptedPassword);
     }
+
     public static int judgeDigits(int number) {
         int count = 0;
         while (number != 0) {
