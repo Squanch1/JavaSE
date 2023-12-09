@@ -3,6 +3,7 @@ package com.itheima.test;
 import java.util.Scanner;
 /**
  * version1(不使用数组存储数据)
+ * 使用回文数的办法正好可以完美解决这道题
  *数字加密
  * */
 
@@ -17,11 +18,5 @@ public class Test5 {
             password /= 10;
         }
         System.out.println(sum);
-        int reversePassword = 0;
-        while (sum != 0) {
-            reversePassword = reversePassword * 10 + sum % 10;
-            sum /= 10;
-        }
-        System.out.println(reversePassword);
     }
 }
