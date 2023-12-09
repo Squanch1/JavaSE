@@ -1,7 +1,9 @@
 package com.itheima.test;
 
 import java.util.Random;
-
+/**
+ * 随机生成五位的验证码,前四位是字母,第五位是数字
+ * */
 public class Test3 {
     public static void main(String[] args) {
         char[] arr = new char[52];

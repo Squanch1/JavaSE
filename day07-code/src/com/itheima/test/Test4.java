@@ -1,7 +1,10 @@
 package com.itheima.test;
 
 import java.util.Scanner;
-
+/**
+ * 评委打分系统
+ * 注意体会for循环的输入检验思想
+ * */
 public class Test4 {
     public static void main(String[] args) {
         double[] arr = initializeScore();

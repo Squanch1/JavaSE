@@ -1,6 +1,9 @@
 package com.itheima.test;
 
 import java.util.Scanner;
+/**
+ * function: 计算机票价格
+ * */
 
 public class Test1 {
     public static void main(String[] args) {

@@ -1,4 +1,7 @@
 package com.itheima.test;
+/**
+ * 计算某个区间内质数的个数,并打印
+ * */
 
 public class Test2 {
     public static void main(String[] args) {

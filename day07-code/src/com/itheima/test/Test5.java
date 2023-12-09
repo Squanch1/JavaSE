@@ -1,6 +1,10 @@
 package com.itheima.test;
 
 import java.util.Scanner;
+/**
+ * version1(不使用数组存储数据)
+ *数字加密
+ * */
 
 public class Test5 {
     public static void main(String[] args) {
