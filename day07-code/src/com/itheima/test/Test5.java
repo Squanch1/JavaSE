@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * version1(不使用数组存储数据)
  * 使用回文数的办法正好可以完美解决这道题
- *数字加密
+ * 数字加密
  * */
 
 public class Test5 {
