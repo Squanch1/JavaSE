@@ -33,9 +33,8 @@ public class Test1 {
                     System.out.println("飞机票类型输入错误!");
                 }
             }
-            default->{
+            default->
                 System.out.println("月份输入有误!");
-            }
         }
     }
 }
