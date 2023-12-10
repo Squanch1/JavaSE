@@ -12,17 +12,18 @@ public class Test11 {
         int[] arr = {2, 588, 888, 1000, 10000};
         int[] arr2 = new int[arr.length];
         Random r = new Random();
-        for (int i = 0; i < arr2.length;) {
-            //变量在哪里能用到,就在哪里创建
+        for (int i = 0; i < arr2.length; ) {
+            //变量在哪里用到,就在哪里创建
             int randomIndex = r.nextInt(arr.length);
-            boolean flag = ifContain(arr2, arr[randomIndex]);
-            if(!flag) {
+            int prize = arr[randomIndex];
+            boolean flag = ifContain(arr2, prize);
+            if (!flag) {
                 arr2[i] = arr[randomIndex];
                 i++;
             }
         }
         for (int i = 0; i < arr2.length; i++) {
-            System.out.println(arr2[i]+"元的奖金被抽出");
+            System.out.println(arr2[i] + "元的奖金被抽出");
         }
     }
 

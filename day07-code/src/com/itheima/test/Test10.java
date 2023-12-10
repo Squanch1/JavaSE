@@ -3,12 +3,13 @@ package com.itheima.test;
 import java.util.Random;
 
 /**
- * version1(最简单的实现方式)
+ * version1(最简单的实现方式:打乱原数组)
  * 抽奖的实现方式
  */
 public class Test10 {
     public static void main(String[] args) {
         int[] arr = {2, 588, 888, 1000, 10000};
+        //打乱数组不需要返回值
         messArr(arr);
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]+"元的奖金被抽出");
