@@ -8,7 +8,10 @@ import java.util.Scanner;
  * 特别注意如果使用到了复合赋值运算符,会改变变量的初始值
  * 当你需要多次使用该变量的时候
  * 就需要在第一次使用前对其拷贝,以便下次使用
+<<<<<<< HEAD
  * 但是如果在方法中,而且是传值调用就不会出现这种问题.
+=======
+>>>>>>> JavaSE/main
  */
 public class Test8 {
     public static void main(String[] args) {
