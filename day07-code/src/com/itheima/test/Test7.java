@@ -22,7 +22,6 @@ public class Test7 {
             number = number * 10 + digit;
             encryptedNumber /= 10;
         }
-
         System.out.println("加密前的数字是" + number);
     }
 }
