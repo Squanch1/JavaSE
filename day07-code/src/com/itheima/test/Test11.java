@@ -13,7 +13,7 @@ public class Test11 {
         int[] arr2 = new int[arr.length];
         Random r = new Random();
         for (int i = 0; i < arr2.length;) {
-            //哪里能用到就在哪里创建
+            //变量在哪里能用到,就在哪里创建
             int randomIndex = r.nextInt(arr.length);
             boolean flag = ifContain(arr2, arr[randomIndex]);
             if(!flag) {
