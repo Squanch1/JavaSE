@@ -24,7 +24,6 @@ public class Test11 {
         for (int i = 0; i < arr2.length; i++) {
             System.out.println(arr2[i]+"元的奖金被抽出");
         }
-
     }
 
     public static boolean ifContain(int[] arr, int prize) {
