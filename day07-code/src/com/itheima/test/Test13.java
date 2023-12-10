@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
+ * version1
  * 双色球系统的模拟实现
  */
 public class Test13 {
