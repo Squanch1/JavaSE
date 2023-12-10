@@ -18,6 +18,7 @@ public class Test6 {
             int digit = number % 10;
             arr[i] = (digit + 5) % 10;
             number /= 10;
+
         }
 
         for (int i = 0; i < arr.length; i++) {
