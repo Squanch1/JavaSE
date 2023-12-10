@@ -20,7 +20,6 @@ public class Test14 {
         }
         System.out.println();
         redeem(setNumber,guessNumber);
-
     }
     public static void redeem(int[] setNumber,int[] guessNumber){
         int redCount = 0;
