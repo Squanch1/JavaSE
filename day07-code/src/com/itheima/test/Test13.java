@@ -31,40 +31,38 @@ public class Test13 {
         System.out.println("本次双色球的蓝球号码为");
         printArr(blueBall);
 
-
-
         redeem(redBall, blueBall, purchaseRedBall, purchaseBlueBall);
 
     }
 
     public static void redeem(int[] redBall, int[] blueBall, int[] purchaseRedBall, int[] purchaseBlueBall) {
-        int count1 = 0;
-        int count2 = 0;
+        int redCount = 0;
+        int blueCount = 0;
         for (int i = 0; i < purchaseRedBall.length; i++) {
             boolean flag = ifContain(redBall, purchaseRedBall[i]);
             if (flag) {
-                count1++;
+                redCount++;
             }
         }
         for (int i = 0; i < purchaseBlueBall.length; i++) {
             boolean flag = ifContain(redBall, purchaseRedBall[i]);
             if (flag) {
-                count2++;
+                blueCount++;
             }
         }
-        System.out.println("您中了"+count1+"个红球");
-        System.out.println("您中了"+count2+"个蓝球");
-        if (count1 == 6 && count2 == 1) {
+        System.out.println("您中了"+redCount+"个红球");
+        System.out.println("您中了"+blueCount+"个蓝球");
+        if (redCount == 6 && blueCount == 1) {
             System.out.println("恭喜你获得一等奖最高1000W奖金!");
-        } else if (count1 == 6) {
+        } else if (redCount == 6) {
             System.out.println("恭喜你获得二等奖最高500W奖金!");
-        } else if (count1 == 5 && count2 == 1) {
+        } else if (redCount == 5 && blueCount == 1) {
             System.out.println("恭喜你获得三等奖3000元奖金!");
-        } else if (count1 == 5 || (count1 == 4 && count2 == 1)) {
+        } else if (redCount == 5 || (redCount == 4 && blueCount == 1)) {
             System.out.println("恭喜你获得四等奖200元奖金!");
-        } else if (count1 == 4 || (count1 == 3 && count2 == 1)) {
+        } else if (redCount == 4 || (redCount == 3 && blueCount == 1)) {
             System.out.println("恭喜你获得五等奖10元奖金!");
-        } else if (count2 == 1) {
+        } else if (blueCount == 1) {
             System.out.println("恭喜你获得六等奖5元奖金!");
         } else {
             System.out.println("很遗憾你没有中奖");
