@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class Test13 {
     public static void main(String[] args) {
         int[] redBall = new int[6];
-        setBall(redBall);
+        setBall(redBall,33);
 
         int[] blueBall = new int[1];
-        setBall(blueBall);
+        setBall(blueBall,16);
 
         System.out.println("请输入你购买的双色球号码");
         int[] purchaseRedBall = new int[6];
@@ -29,6 +29,8 @@ public class Test13 {
         printArr(redBall);
         System.out.println("本次双色球的蓝球号码为");
         printArr(blueBall);
+
+
 
         redeem(redBall, blueBall, purchaseRedBall, purchaseBlueBall);
 
@@ -79,10 +81,10 @@ public class Test13 {
         System.out.println(number);
     }
 
-    public static void setBall(int[] arr) {
+    public static void setBall(int[] arr,int bound) {
         Random r = new Random();
         for (int i = 0; i < arr.length; ) {
-            int number = r.nextInt(33) + 1;
+            int number = r.nextInt(bound) + 1;
             boolean flag = ifContain(arr, number);
             if (!flag) {
                 arr[i] = number;
