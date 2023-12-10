@@ -16,13 +16,8 @@ public class Test6 {
         int encryptedPassword = 0;
         for (int i = 0; i < arr.length; i++) {
             int digit = number % 10;
-            arr[arr.length - 1 - i] = (digit + 5) % 10;
+            arr[i] = (digit + 5) % 10;
             number /= 10;
-        }
-        for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
         }
 
         for (int i = 0; i < arr.length; i++) {
