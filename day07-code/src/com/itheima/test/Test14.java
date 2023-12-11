@@ -19,22 +19,23 @@ public class Test14 {
             System.out.print(guessNumber[i] + " ");
         }
         System.out.println();
-        redeem(setNumber,guessNumber);
+        redeem(setNumber, guessNumber);
     }
-    public static void redeem(int[] setNumber,int[] guessNumber){
+
+    public static void redeem(int[] setNumber, int[] guessNumber) {
         int redCount = 0;
         int blueCount = 0;
-        for (int i = 0; i < guessNumber.length-1; i++) {
+        for (int i = 0; i < guessNumber.length - 1; i++) {
             boolean flag = whetherContain(guessNumber, setNumber[i]);
-            if(flag){
+            if (flag) {
                 redCount++;
             }
         }
-        System.out.println("红球中奖个数为"+redCount);
-        if(guessNumber[guessNumber.length-1] == setNumber[setNumber.length-1]){
+        System.out.println("红球中奖个数为" + redCount);
+        if (guessNumber[guessNumber.length - 1] == setNumber[setNumber.length - 1]) {
             blueCount++;
         }
-        System.out.println("蓝球中奖个数为"+blueCount);
+        System.out.println("蓝球中奖个数为" + blueCount);
         if (redCount == 6 && blueCount == 1) {
             System.out.println("恭喜你获得一等奖最高1000W奖金!");
         } else if (redCount == 6) {
@@ -85,17 +86,19 @@ public class Test14 {
             } else {
                 System.out.println("当前输入的红球号码不合法!");
             }
+
         }
-        while (true) {
+        for (int i = 0; i < 1; ) {
             System.out.println("请输入蓝球的号码");
             int guess = sc.nextInt();
             if (guess >= 1 && guess <= 16) {
                 arr[arr.length - 1] = guess;
-                break;
+                i++;
             } else {
                 System.out.println("当前输入的蓝球号码不合法!");
             }
         }
+
         return arr;
     }
 
