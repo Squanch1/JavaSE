@@ -1,6 +1,6 @@
 package com.itheima.array;
 
-public class TwoDimensionalArray {
+public class DoubleDimensionalArrayDemo1 {
     public static void main(String[] args) {
         int[][] arr = {
                 {1, 2, 3},
