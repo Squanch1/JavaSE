@@ -1,4 +1,4 @@
-package com.itheima.opp;
+package com.itheima.test1;
 
 public class Phone {
     String brand;

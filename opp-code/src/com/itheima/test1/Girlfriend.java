@@ -1,4 +1,4 @@
-package com.itheima.opp;
+package com.itheima.test1;
 
 public class Girlfriend {
     //对于私有化的成员变量都需要有get和set方法
@@ -37,6 +37,4 @@ public class Girlfriend {
     public String getHairColor() {
         return this.hairColor;
     }
-
-
 }

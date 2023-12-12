@@ -1,4 +1,4 @@
-package com.itheima.opp;
+package com.itheima.test1;
 
 public class GirlfriendTest {
     public static void main(String[] args) {
